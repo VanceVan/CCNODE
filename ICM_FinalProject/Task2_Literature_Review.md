@@ -30,7 +30,7 @@ HD is best known as a disease of the striatum, but the mutant protein is made by
 1. **The cortex degenerates too, not just the striatum.** Huntingtin is expressed widely [HDCRG 1993]. Post-mortem stereology finds loss of total neurons and pyramidal cells across frontal, parietal, temporal and occipital cortex [Nana 2014].
 2. **Thinning moves from back to front.** Cortical thinning starts early and appears to spread from posterior to anterior regions as the disease progresses [Rosas 2002]. In stage I–II patients, sensorimotor, parietal and occipital cortex are already thin, while anterior frontal and temporal regions are relatively spared [Rosas 2008].
 3. **The visual cortex is wired into the striatum.** Visual cortex projects to the tail of the caudate through a visual corticostriatal loop [Seger 2013]. Damage at either end of a corticostriatal loop is one proposed route by which striatal and cortical degeneration spread to each other.
-4. **Clinical consequences.** People with HD show reduced integrity of the visual pathway and deficits in colour and motion perception [Dhalla 2019]. They also show impaired visual search and mental rotation, which track posterior brain structure [Labuschagne 2016]. Visual deficits matter for daily function and for cognitive tests used in HD trials [Coppen 2018, *Behav Brain Res*].
+4. **Clinical consequences.** People with HD show reduced integrity of the visual pathway and deficits in color and motion perception [Dhalla 2019]. They also show impaired visual search and mental rotation, which track posterior brain structure [Labuschagne 2016]. Visual deficits matter for daily function and for cognitive tests used in HD trials [Coppen 2018, *Behav Brain Res*].
 
 ---
 
@@ -45,7 +45,7 @@ HD is best known as a disease of the striatum, but the mutant protein is made by
 | 2015 | Johnson et al., *Neuropsychologia* | TRACK-HD: 97 controls, 109 premanifest, 69 early HD; FreeSurfer thickness of 4 occipital regions | Occipital thickness reduced in **both premanifest and early HD**. Thinner cortex linked to worse performance on 5 of 6 visual tasks, strongest for **lateral occipital and lingual**; **cuneus showed no association**; finger tapping (non-visual) unrelated |
 | 2016 | Labuschagne et al., *J Int Neuropsychol Soc* | TRACK-HD: 119 premanifest, 104 early HD, 110 controls | Visual search and mental rotation track parietal and occipital volume and thickness (precuneus, cuneus, calcarine, lingual) and posterior fusiform. Visual search declined over 12 months in early HD |
 | 2018 | Coppen et al., *Hum Brain Mapp* | 18 controls, 21 premanifest, 20 manifest; VBM, thickness, resting-state fMRI | Manifest HD: atrophy of associative visual cortex and reduced connectivity of lingual gyrus, occipital pole and occipital fusiform with the medial visual network. **Premanifest: no differences** |
-| 2019 | Dhalla et al., *J Huntingtons Dis* | Systematic review | Retinal thinning, reduced VEP amplitude, visual-cortex cell loss and thinning; colour and motion perception deficits |
+| 2019 | Dhalla et al., *J Huntingtons Dis* | Systematic review | Retinal thinning, reduced VEP amplitude, visual-cortex cell loss and thinning; color and motion perception deficits |
 | 2021 | Johnson et al., *Biol Psychiatry* | 49 HD gene carriers vs 49 controls, 3–7 scans each over 10 years | Widespread cortical differences, but **occipital and parietal regions show the greatest rate of atrophy** |
 
 ### Where the literature disagrees (useful for Task 4)
@@ -83,13 +83,13 @@ H2 is about clinical relevance, not a prediction that these ROIs show the larges
 ## 7. Speaker script (≈ 80 seconds)
 
 **Slide "Beyond the striatum" (≈ 25 s).**
-Huntington's disease is caused by an expanded CAG repeat in the huntingtin gene and is inherited in an autosomal dominant way. Its hallmark is the loss of medium spiny neurons in the striatum. But mutant huntingtin is made by neurons throughout the brain, so the cortex degenerates too, and cortical thinning moves from the back of the brain forward. That includes the visual cortex, which loops into the tail of the caudate. Patients develop problems with colour and motion perception, visual search and mental rotation.
+Huntington's disease is caused by an expanded CAG repeat in the huntingtin gene and is inherited in an autosomal dominant way. Its hallmark is the loss of medium spiny neurons in the striatum. But mutant huntingtin is made by neurons throughout the brain, so the cortex degenerates too, and cortical thinning moves from the back of the brain forward. That includes the visual cortex, which loops into the tail of the caudate. Patients develop problems with color and motion perception, visual search and mental rotation.
 
 **Slide "Studies since 2002" (≈ 30 s).**
 The literature consistently puts the occipital lobe early in the disease. Rosas showed that cortical thinning moves from posterior to anterior, with occipital thinning already present in stage one and two patients. Post-mortem counts confirm neuron loss across the cortex, though studies disagree about the primary visual cortex itself. In TRACK-HD, the study our data come from, Johnson found occipital thinning even before symptoms, and it predicted worse visual-test scores. Over ten years, the occipital and parietal cortex atrophied fastest of any cortical region.
 
 **Slide "What we expect in our 10 occipital ROIs" (≈ 25 s).**
-For our ten structures, the lingual gyrus and the lateral occipital gyri, inferior and middle, have the strongest links to visual deficits in HD. The cuneus thins but has not been tied to test scores. So we hypothesise that HD subjects have smaller volumes in all ten occipital ROIs, on both sides, which we test next. One caveat: most studies use FreeSurfer labels, so their "lateral occipital" roughly equals our IOG and MOG, and primary visual cortex is split between our cuneus and lingual gyrus.
+For our ten structures, the lingual gyrus and the lateral occipital gyri, inferior and middle, have the strongest links to visual deficits in HD. The cuneus thins but has not been tied to test scores. So we hypothesize that HD subjects have smaller volumes in all ten occipital ROIs, on both sides, which we test next. One caveat: most studies use FreeSurfer labels, so their "lateral occipital" roughly equals our IOG and MOG, and primary visual cortex is split between our cuneus and lingual gyrus.
 
 ---
 
