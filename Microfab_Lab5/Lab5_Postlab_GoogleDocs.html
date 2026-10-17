@@ -27,40 +27,42 @@
 <h1>Lab 5 Postlab: Metal Evaporation (Flow Cytometer)</h1>
 <p><b>Run details.</b> Al was thermally evaporated from a tungsten boat at about 10<sup>−6</sup> torr in a bell jar about 450 mm across and 600 mm tall. We used SPR220 photoresist instead of the SJR5740 listed in the handout, spun at 2000 rpm for 60 s and soft-baked at about 105 °C for 7 min. At the end of the run, the STC-200 deposition rate controller read THICK = 0.464 kÅ.</p>
 
-<p class="note"><b>Fill in before submitting:</b> the Q1 estimate assumes we loaded <b>4 pieces of 1/2" Al wire, 1.0 mm in diameter</b>. If you loaded a different amount, take your value from the table in Q1.</p>
-
 <h2>1. Aluminum thickness: our estimate vs. the gauge</h2>
 <p><b>Gauge reading.</b> The STC-200 showed 0.464 kÅ = 464 Å = <b>46.4 nm</b>.</p>
 
-<p><b>Mass of Al loaded.</b> Each piece is a 1/2" (1.27 cm) length of 1.0 mm-diameter wire:</p>
-<p class="eq">m<sub>piece</sub> = ρπr<sup>2</sup>L = (2.70 g/cm<sup>3</sup>) × π × (0.05 cm)<sup>2</sup> × (1.27 cm) = 0.0269 g</p>
-<p>Four pieces give m ≈ 0.108 g. The procedure says to evaporate until the boat is empty, so we take all of it as evaporated.</p>
-
-<p><b>Geometry.</b> A flat boat acts as a small surface source. It emits with a cosine distribution, mostly upward. For a wafer directly above the source at distance h, the film thickness is:</p>
-<p class="eq">t = m / (πρh<sup>2</sup>)</p>
-<p>The wafers sit near the top of the 600 mm bell jar, so take h ≈ 60 cm:</p>
-<p class="eq">t = 0.108 g / [π × (2.70 g/cm<sup>3</sup>) × (60 cm)<sup>2</sup>] = 3.5 × 10<sup>−6</sup> cm ≈ <b>35 nm (350 Å)</b></p>
-
+<p><b>Estimate from the lecture equations.</b> These are the parameters from the TA's Post-Lab 5 update, applied to our chamber:</p>
 <table>
-  <tr><th>Pieces of 1/2" wire</th><th>1.0 mm wire: mass → thickness</th><th>1.5 mm wire: mass → thickness</th></tr>
-  <tr><td>2</td><td>0.054 g → 18 nm</td><td>0.121 g → 40 nm</td></tr>
-  <tr><td>3</td><td>0.081 g → 26 nm</td><td>0.182 g → 60 nm</td></tr>
-  <tr><td><b>4</b></td><td><b>0.108 g → 35 nm</b></td><td>0.242 g → 79 nm</td></tr>
-  <tr><td>5</td><td>0.135 g → 44 nm</td><td>0.303 g → 99 nm</td></tr>
-  <tr><td>6</td><td>0.162 g → 53 nm</td><td>0.364 g → 119 nm</td></tr>
+  <tr><th>Parameter</th><th>Value</th><th>Meaning</th></tr>
+  <tr><td>m</td><td>(26.98 × 10<sup>−3</sup> kg/mol) / (6.022 × 10<sup>23</sup> atoms/mol) = 4.48 × 10<sup>−26</sup> kg</td><td>Mass of <b>one</b> Al atom, not the total Al loaded</td></tr>
+  <tr><td>T</td><td>1225 °C = 1498.15 K</td><td>Evaporation temperature, the middle of the 1200–1250 °C range</td></tr>
+  <tr><td>P<sub>e</sub></td><td>10<sup>−2</sup> Torr × 133.322 Pa/Torr = 1.333 Pa</td><td>Equilibrium <b>vapor pressure of Al</b> at T, read from the vapor-pressure chart. This is not the chamber pressure</td></tr>
+  <tr><td>A</td><td>π(1.25 cm)<sup>2</sup> = 4.91 × 10<sup>−4</sup> m<sup>2</sup></td><td>Area of the evaporating source (the same value as the TA's example)</td></tr>
+  <tr><td>h</td><td>0.600 m</td><td>Height from the source up to the wafers (our chamber height)</td></tr>
+  <tr><td>x</td><td>0.450 m / 2 = 0.225 m</td><td>Sideways offset of the wafer from the source (half our chamber width, as in the TA's example)</td></tr>
+  <tr><td>ρ</td><td>2.70 g/cm<sup>3</sup> = 2700 kg/m<sup>3</sup></td><td>Density of Al</td></tr>
 </table>
 
-<p><b>Check against the chamber size.</b> Suppose instead that the Al coats the whole inside of the bell jar evenly. With diameter 45 cm and height 60 cm, the area is πr<sup>2</sup> + 2πrh ≈ 1.0 × 10<sup>4</sup> cm<sup>2</sup>, and 0.108 g gives about <b>40 nm</b>. That is close to the estimate above. (If the 450 mm were the radius rather than the diameter, the area would double and the film would be about 17 nm.)</p>
+<p><b>Step 1: mass evaporation rate (Hertz–Knudsen).</b></p>
+<p class="eq">R<sub>ME</sub> = √( m / 2πkT ) · P<sub>e</sub></p>
+<p class="eq">R<sub>ME</sub> = √[ 4.48 × 10<sup>−26</sup> kg / (2π × 1.38 × 10<sup>−23</sup> J/K × 1498.15 K) ] × 1.333 Pa = <b>7.83 × 10<sup>−4</sup> kg/(m<sup>2</sup>·s)</b></p>
 
-<p><b>Uniformity.</b> With this geometry, the film at a point x away from the wafer centre is t(x)/t<sub>0</sub> = [1 + (x/h)<sup>2</sup>]<sup>−2</sup>. At the edge of a 100 mm wafer (x = 5 cm) this is 0.986, so the Al thickness varies by only about 1–2% across the wafer.</p>
+<p><b>Step 2: deposition rate at the wafer.</b> The distance from the source to the wafer is:</p>
+<p class="eq">R = √(h<sup>2</sup> + x<sup>2</sup>) = √(0.600<sup>2</sup> + 0.225<sup>2</sup>) = 0.641 m,&nbsp;&nbsp;&nbsp; cos θ = h/R = 0.600/0.641 = 0.936</p>
+<p class="eq">R<sub>d</sub> = (R<sub>ME</sub>A / ρ) · (cos θ / πR<sup>2</sup>)</p>
+<p class="eq">R<sub>d</sub> = [(7.83 × 10<sup>−4</sup>)(4.91 × 10<sup>−4</sup>) / 2700] × [0.936 / (π × 0.641<sup>2</sup>)] = <b>1.033 × 10<sup>−10</sup> m/s ≈ 1.03 Å/s</b></p>
 
-<p><b>Comparison.</b> Our estimate (about 35 nm) and the gauge (46.4 nm) agree to within about 25–30%. For the gauge to be exactly right, we would have needed m = πρh<sup>2</sup>t ≈ 0.14 g of Al, roughly 5 pieces of 1 mm wire. Reasons the two numbers differ:</p>
+<p><b>Step 3: thickness.</b> The lab manual gives a deposition time of 5–10 min:</p>
+<p class="eq">d = R<sub>d</sub> · t:&nbsp;&nbsp; t = 5 min → d ≈ <b>31 nm</b>;&nbsp;&nbsp; t = 10 min → d ≈ 62 nm</p>
+<p>Using 1200 °C or 1250 °C instead changes this by less than 1%. Our 5-minute value is a little below the TA's 34.08 nm because our chamber is taller (0.600 m instead of 0.564 m).</p>
+
+<p><b>Comparison with the gauge.</b> The gauge's 46.4 nm lies inside our 31–62 nm range. It corresponds to t = 46.4 nm ÷ 1.033 Å/s ≈ 450 s ≈ 7.5 min of deposition, which fits the 5–10 min the boat took to empty. As a further check, the evaporated mass in that time, R<sub>ME</sub>·A·t ≈ 0.17 g, is about what a few short pieces of Al wire weigh. Reasons the two numbers can differ:</p>
 <ul>
-  <li><b>The amount loaded is uncertain.</b> Wire diameter and piece length were not measured. Part of the Al also wets or alloys with the hot tungsten boat and never evaporates.</li>
-  <li><b>Simplified geometry.</b> The boat is neither a perfect point source nor a perfect surface source. A pure point source (t = m / 4πρh<sup>2</sup>) would give only about 9 nm, so the real emission pattern matters a lot. The source-to-wafer distance was also estimated from the chamber height.</li>
-  <li><b>The gauge's own settings.</b> The quartz crystal monitor works out thickness from mass, using the density (2.70 g/cm<sup>3</sup> for Al), the Z-ratio (1.08 for Al), and a tooling factor. The tooling factor corrects for the crystal sitting closer to or farther from the source than the wafers. If the controller still had another film's settings, or the default tooling factor of 100%, its reading would be off by the same factor.</li>
+  <li><b>T and P<sub>e</sub> are estimates.</b> The boat temperature was not measured. Vapor pressure rises very steeply with temperature, so a temperature error of a few tens of °C changes P<sub>e</sub>, and therefore R<sub>d</sub>, by a large factor. The rate also changed during the run as the Variac current was raised and the Al ran out.</li>
+  <li><b>Simplified geometry.</b> The equation treats the boat as a small flat source and uses only one cosine factor. The source area and the wafer's position in the chamber were estimated.</li>
+  <li><b>The gauge's own settings.</b> The quartz crystal monitor works out thickness from mass, using the density (2.70 g/cm<sup>3</sup> for Al), the Z-ratio (1.08 for Al), and a tooling factor. The tooling factor corrects for the crystal sitting closer to or farther from the source than the wafers. If the controller still had another film's settings, its reading would be off by the same factor.</li>
   <li><b>Film density.</b> Evaporated films can be slightly less dense than bulk Al, which makes them a little thicker than the bulk density predicts.</li>
 </ul>
+<p><i>Why the melting point and chamber pressure don't work:</i> P<sub>e</sub> must be the vapor pressure of the aluminum itself. Using T = 660 °C and the chamber pressure 10<sup>−6</sup> Torr gives R<sub>ME</sub> ≈ 1 × 10<sup>−7</sup> kg/(m<sup>2</sup>·s) and only about 0.004 nm in 5 minutes. That is ten thousand times too thin, which is why the TA updated the parameters.</p>
 <p>To measure the true thickness, use a profilometer step height after next week's Al etch.</p>
 
 <h2>2. Photoresist used and its thickness</h2>
